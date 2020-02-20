@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var person = {
+            firstName: "scott",
+            lastName: "tiger",
+            age: 35,
+            phone: "010-1234-5678"
+        }
+        var person1 = {
+            firstName: "scott1",
+            lastName: "tiger1",
+            age: 35,
+            phone: "010-1234-5678"
+        }
+        var person2 = {
+            firstName: "scot2t",
+            lastName: "tige2r",
+            age: 35,
+            phone: "010-1234-5678"
+        }
+        var person3 = {
+            firstName: "scott3",
+            lastName: "tig4er",
+            age: 35,
+            phone: "010-1234-5678"
+        }
+        var persons = [person, person1, person2, person3];
+        console.log(person.firstName+", " +person.lastName);
+        console.log("=====object======")
+        for(obj of persons) {
+            console.log(obj);
+        }
+        console.log("very important!!!!")
+        console.log(person["firstName"]+", " +person["lastName"])
+        console.log("=====================[배열 object]=======================")
+        for(i in persons){
+            console.log(i+"번째 person");
+            for(o in person){
+            console.log(persons[i][o])
+            }
+        }
+    </script>
+</body>
+
+</html>
